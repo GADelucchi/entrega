@@ -1,3 +1,5 @@
+$gradient: linear-gradient(to bottom, #4297df, white);
+
 * {
     margin: 0;
     padding: 0;
@@ -17,7 +19,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    background-image: linear-gradient(to bottom, #4297df, white);
+    background-image: $gradient;
     grid-area: head;
 }
 
@@ -46,8 +48,47 @@ main {
 }
 
 #picture__logo {
-    height: 6rem;
-    width: 6rem;
+    height: 9rem;
+    width: 9rem;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 30px
+}
+
+.menu__item{
+    &:hover .submenu {
+        display: block;
+        z-index: 1;
+        background-color: transparent;
+    }
+}
+
+.menu__link {
+    text-decoration: none;
+    font-size: 1.8em;
+    color: black;
+    padding: 0.7rem;
+}
+
+.submenu {
+    list-style: none;
+    display: none;
+    position: absolute;
+}
+
+.submenu__link {
+    text-decoration: none;
+    font-size: 1.8em;
+    color: black;
+    /* padding: 0.9rem; */
+}
+
+.menu__link--modifier {
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 .grid {
@@ -73,45 +114,12 @@ main {
     }
 }
 
-.menu {
-    display: flex;
-    list-style: none;
-    gap: 30px
-}
-
-.menu__item{
-    &:hover .submenu {
-        display: block;
-        z-index: 1;
-        background-image: linear-gradient(to bottom, #4297df, white);
-    }
-}
-
-.menu__link {
-    text-decoration: none;
-    font-size: 1.3em;
-    color: black;
-    padding: 0.7rem;
-}
-
-.submenu {
-    list-style: none;
-    display: none;
-    position: absolute;
-}
-
-.submenu__link {
-    text-decoration: none;
-    font-size: 1.3em;
-    color: black;
-    /* padding: 0.9rem; */
-}
-
 .imgs {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: center;
+    align-items: center;
     grid-area: imgs;
     background-image: radial-gradient(rgb(215, 255, 255), white)
 }
@@ -124,7 +132,7 @@ main {
 }
 
 .div__imgs{
-    :hover {
+    &:hover {
         height: 230px;
     }
 }
@@ -148,24 +156,23 @@ main {
     overflow: auto;
 }
 
+#presentation-modifier {
+    font-weight: bold;
+}
+
 footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 6rem;
+    height: 8rem;
     grid-area: foot;
     background-image: linear-gradient(to top, #4297df, white);
 }
 
 .footer__link {
     text-decoration: none;
-    font-size: 1.3em;
+    font-size: 1.8em;
     color: black;
-}
-
-.menu__link--modifier {
-    font-weight: bold;
-    text-decoration: underline;
 }
 
 .terminos__listado{

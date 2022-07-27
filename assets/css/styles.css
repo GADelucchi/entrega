@@ -37,8 +37,39 @@ main {
   background-color: transparent; }
 
 #picture__logo {
-  height: 6rem;
-  width: 6rem; }
+  height: 9rem;
+  width: 9rem; }
+
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 30px; }
+
+.menu__item:hover .submenu {
+  display: block;
+  z-index: 1;
+  background-color: transparent; }
+
+.menu__link {
+  text-decoration: none;
+  font-size: 1.8em;
+  color: black;
+  padding: 0.7rem; }
+
+.submenu {
+  list-style: none;
+  display: none;
+  position: absolute; }
+
+.submenu__link {
+  text-decoration: none;
+  font-size: 1.8em;
+  color: black;
+  /* padding: 0.9rem; */ }
+
+.menu__link--modifier {
+  font-weight: bold;
+  text-decoration: underline; }
 
 .grid {
   display: grid;
@@ -51,38 +82,12 @@ main {
 .grid ul li a {
   list-style: none; }
 
-.menu {
-  display: flex;
-  list-style: none;
-  gap: 30px; }
-
-.menu__item:hover .submenu {
-  display: block;
-  z-index: 1;
-  background-image: linear-gradient(to bottom, #4297df, white); }
-
-.menu__link {
-  text-decoration: none;
-  font-size: 1.3em;
-  color: black;
-  padding: 0.7rem; }
-
-.submenu {
-  list-style: none;
-  display: none;
-  position: absolute; }
-
-.submenu__link {
-  text-decoration: none;
-  font-size: 1.3em;
-  color: black;
-  /* padding: 0.9rem; */ }
-
 .imgs {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-content: center;
+  align-items: center;
   grid-area: imgs;
   background-image: radial-gradient(#d7ffff, white); }
 
@@ -92,7 +97,7 @@ main {
   margin: 10px;
   transition: height 2s; }
 
-.div__imgs :hover {
+.div__imgs:hover {
   height: 230px; }
 
 .texto {
@@ -111,22 +116,21 @@ main {
   height: 200px;
   overflow: auto; }
 
+#presentation-modifier {
+  font-weight: bold; }
+
 footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 6rem;
+  height: 8rem;
   grid-area: foot;
   background-image: linear-gradient(to top, #4297df, white); }
 
 .footer__link {
   text-decoration: none;
-  font-size: 1.3em;
+  font-size: 1.8em;
   color: black; }
-
-.menu__link--modifier {
-  font-weight: bold;
-  text-decoration: underline; }
 
 .terminos__listado {
   font-size: 20px;
