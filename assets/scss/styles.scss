@@ -1,4 +1,5 @@
 $gradient: linear-gradient(to bottom, #4297df, white);
+$gradient__transparent: linear-gradient(to bottom, transparent, #FFFFFF);
 
 * {
     margin: 0;
@@ -19,8 +20,9 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    background-image: $gradient;
+    background: $gradient;
     grid-area: head;
+    margin-bottom: 5rem;
 }
 
 main {
@@ -31,20 +33,20 @@ main {
     gap: 30px;
 }
 
-.navbar {
-    background-color: transparent;
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8rem;
+    grid-area: foot;
+    background-image: linear-gradient(to top, #4297df, white);
+    margin-top: 5rem;
 }
 
-.navbar-expand-lg {
-    background-color: transparent; 
-}
-
-.bg-light {
-    background-color: transparent;
-}
-
-.container-fluid {
-    background-color: transparent;
+.main-modifier {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #picture__logo {
@@ -62,7 +64,7 @@ main {
     &:hover .submenu {
         display: block;
         z-index: 1;
-        background-color: transparent;
+        background: $gradient__transparent;
     }
 }
 
@@ -77,13 +79,17 @@ main {
     list-style: none;
     display: none;
     position: absolute;
+    // background-image: $gradient__transparent;
+}
+
+.submenu__item {
+    padding: 0.5rem;
 }
 
 .submenu__link {
     text-decoration: none;
     font-size: 1.8em;
     color: black;
-    /* padding: 0.9rem; */
 }
 
 .menu__link--modifier {
@@ -145,7 +151,8 @@ main {
     background-image: radial-gradient(bisque, white);
 }
 
-#titulo {
+.titulo {
+    font-size: 2em;
     margin: 0.5rem;
 }
 
@@ -160,15 +167,6 @@ main {
     font-weight: bold;
 }
 
-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 8rem;
-    grid-area: foot;
-    background-image: linear-gradient(to top, #4297df, white);
-}
-
 .footer__link {
     text-decoration: none;
     font-size: 1.8em;
@@ -180,15 +178,28 @@ footer {
     margin-left: 40px;
     display: block
 }
+
 .form{
     font-size: 15px;
-    border-width: 15px;
-    border: #000000;
-    border-style: dashed;
 }
+
+.fieldset {
+    align-content: center;
+    height: 50rem;
+    width: 50rem;
+}
+
 .form__input{
     margin: 15px;
     display: block
+}
+
+.form__input__submit {
+    margin-left: 1.5rem;
+}
+
+.form__input__reset {
+    margin-left: 1.5rem;
 }
 
 .form__input--margin--left {
@@ -199,7 +210,20 @@ footer {
     margin-left: 15px;
 }
 
+.width {
+    width: 1000px;
+    height: 600px;
+}
+
 .terms {
     display: flex;
     justify-content: center;
+}
+
+.card-title {
+    font-size: 2.5em;
+}
+
+.card-text {
+    font-size: 1.5em;
 }
