@@ -1,5 +1,11 @@
 $gradient: linear-gradient(to bottom, #4297df, white);
 $gradient__transparent: linear-gradient(to bottom, transparent, #FFFFFF);
+$cursos:(
+    remanufacturacion: #FFE4C4,
+    reparacion: #4297df,
+    software: #F2C4FF,
+    placa: #DCFFC4,
+);
 
 * {
     margin: 0;
@@ -86,11 +92,11 @@ footer {
     padding: 0.5rem;
 }
 
-.submenu__link {
-    text-decoration: none;
-    font-size: 1.8em;
-    color: black;
-}
+// .submenu__link {
+//     text-decoration: none;
+//     font-size: 1.8em;
+//     color: black;
+// }
 
 .menu__link--modifier {
     font-weight: bold;
@@ -167,11 +173,11 @@ footer {
     font-weight: bold;
 }
 
-.footer__link {
-    text-decoration: none;
-    font-size: 1.8em;
-    color: black;
-}
+// .footer__link {
+//     text-decoration: none;
+//     font-size: 1.8em;
+//     color: black;
+// }
 
 .terminos__listado{
     font-size: 20px;
@@ -199,7 +205,7 @@ footer {
 }
 
 .form__input__reset {
-    margin-left: 1.5rem;
+    @extend .form__input__submit;
 }
 
 .form__input--margin--left {
@@ -207,7 +213,7 @@ footer {
 }
 
 .form__label--margin--left {
-    margin-left: 15px;
+    @extend .form__input--margin--left;
 }
 
 .width {
@@ -226,4 +232,24 @@ footer {
 
 .card-text {
     font-size: 1.5em;
+}
+
+@each $curso, $color in $cursos {
+    .card-#{$curso}{
+        background-color: $color !important;
+    }
+}
+
+@mixin text {
+    text-decoration: none;
+    font-size: 1.8em;
+    color: black;
+}
+
+.footer__link {
+    @include text;
+}
+
+.submenu__link {
+    @include text;
 }

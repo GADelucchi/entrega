@@ -67,11 +67,6 @@ footer {
 .submenu__item {
   padding: 0.5rem; }
 
-.submenu__link {
-  text-decoration: none;
-  font-size: 1.8em;
-  color: black; }
-
 .menu__link--modifier {
   font-weight: bold;
   text-decoration: underline; }
@@ -125,11 +120,6 @@ footer {
 #presentation-modifier {
   font-weight: bold; }
 
-.footer__link {
-  text-decoration: none;
-  font-size: 1.8em;
-  color: black; }
-
 .terminos__listado {
   font-size: 20px;
   margin-left: 40px;
@@ -147,16 +137,10 @@ footer {
   margin: 15px;
   display: block; }
 
-.form__input__submit {
+.form__input__submit, .form__input__reset {
   margin-left: 1.5rem; }
 
-.form__input__reset {
-  margin-left: 1.5rem; }
-
-.form__input--margin--left {
-  margin-left: 15px; }
-
-.form__label--margin--left {
+.form__input--margin--left, .form__label--margin--left {
   margin-left: 15px; }
 
 .width {
@@ -172,3 +156,25 @@ footer {
 
 .card-text {
   font-size: 1.5em; }
+
+.card-remanufacturacion {
+  background-color: #FFE4C4 !important; }
+
+.card-reparacion {
+  background-color: #4297df !important; }
+
+.card-software {
+  background-color: #F2C4FF !important; }
+
+.card-placa {
+  background-color: #DCFFC4 !important; }
+
+.footer__link {
+  text-decoration: none;
+  font-size: 1.8em;
+  color: black; }
+
+.submenu__link {
+  text-decoration: none;
+  font-size: 1.8em;
+  color: black; }
