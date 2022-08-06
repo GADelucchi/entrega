@@ -1,0 +1,9 @@
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8rem;
+    grid-area: foot;
+    background-image: linear-gradient(to top, #4297df, white);
+    margin-top: 5rem;
+}

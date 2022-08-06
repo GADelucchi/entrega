@@ -1,0 +1,11 @@
+$gradient: linear-gradient(to bottom, #4297df, white);
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: $gradient;
+    grid-area: head;
+    margin-bottom: 5rem;
+}

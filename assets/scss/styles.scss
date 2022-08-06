@@ -1,4 +1,5 @@
-$gradient: linear-gradient(to bottom, #4297df, white);
+@import "header.scss";
+@import "footer.scss";
 $gradient__transparent: linear-gradient(to bottom, transparent, #FFFFFF);
 $cursos:(
     remanufacturacion: #FFE4C4,
@@ -21,32 +22,13 @@ html {
     font-size: 62.5%;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    background: $gradient;
-    grid-area: head;
-    margin-bottom: 5rem;
-}
-
 main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 30px;
-}
-
-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 8rem;
-    grid-area: foot;
-    background-image: linear-gradient(to top, #4297df, white);
-    margin-top: 5rem;
+    
 }
 
 .main-modifier {
@@ -162,6 +144,13 @@ footer {
     margin: 0.5rem;
 }
 
+.titulo--modifier {
+    font-size: 2em;
+    margin: 0.5rem;
+    color: white;
+    text-shadow: -6px -1px 8px rgba(0, 0, 0, 0.72);
+}
+
 #presentation {
     margin: 1rem;
     font-size: 1.4em;
@@ -182,17 +171,20 @@ footer {
 .terminos__listado{
     font-size: 20px;
     margin-left: 40px;
-    display: block
+    display: block;
+    color: white;
+    text-shadow: -6px 0px 6px black;
 }
 
 .form{
     font-size: 15px;
 }
 
-.fieldset {
-    align-content: center;
+fieldset {
+    align-items: center;
     height: 50rem;
     width: 50rem;
+    border: none;
 }
 
 .form__input{
@@ -252,4 +244,15 @@ footer {
 
 .submenu__link {
     @include text;
+}
+
+.background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 100%;
+    background-image: url("../imgs/foto_contacto.jpeg");
+    opacity: 0.9;
+    height: 20rem;
+    margin-bottom: 5rem;
 }
