@@ -5,7 +5,26 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
+    background: $gradient !important;
+    grid-area: head;
+    margin-bottom: 5rem;
+} 
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
     background: $gradient;
     grid-area: head;
     margin-bottom: 5rem;
 }
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: $gradient;
+    grid-area: head;
+} 

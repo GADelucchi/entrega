@@ -1,5 +1,6 @@
 @import "header.scss";
 @import "footer.scss";
+@import "media.scss";
 $gradient__transparent: linear-gradient(to bottom, transparent, #FFFFFF);
 $cursos:(
     remanufacturacion: #FFE4C4,
@@ -38,6 +39,11 @@ main {
 }
 
 #picture__logo {
+    height: 9rem;
+    width: 9rem;
+}
+
+#dropdown__logo {
     height: 9rem;
     width: 9rem;
 }
@@ -216,6 +222,10 @@ fieldset {
 .terms {
     display: flex;
     justify-content: center;
+}
+
+.card {
+    width: 20%;
 }
 
 .card-title {

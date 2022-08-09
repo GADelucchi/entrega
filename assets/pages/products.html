@@ -13,52 +13,66 @@
 </head>
 
 <body>
-    <header>
-        <picture>
-            <a href="../../index.html">
-                <img src="../../assets/imgs/logo-sin-fondo.png" alt="Logo" id="picture__logo">
-            </a>
-        </picture>
-        <nav>
-            <ul class="menu">
-                <li class="menu__item"><a href="../../index.html" class="menu__link">Inicio</a></li>
-                <li class="menu__item"><a href="cursos.html" class="menu__link">Cursos</a>
-                    <ul class="submenu">
-                        <li class="submenu__item">
-                            <a href="#" class="submenu__link">Remanufacturación</a>
-                        </li>
-                        <li class="submenu__item">
-                            <a href="#" class="submenu__link">Reparación</a>
-                        </li>
-                        <li class="submenu__item">
-                            <a href="#" class="submenu__link">Software</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="menu__item">
-                    <a href="gallery.html" class="menu__link menu__link--modifier">Galería</a>
-                </li>
-                <li class="menu__item">
-                    <a href="products.html" class="menu__link">Productos</a>
-                </li>
-                <li class="menu__item">
-                    <a href="contact.html" class="menu__link">Contacto</a>
-                </li>
-            </ul>
+    <header class="grid">
+        <nav class="navbar navbar-expand-sm bg-light fixed-top header">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../imgs/logo-sin-fondo.png" alt="Logo" id="picture__logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <img src="../imgs/logo-sin-fondo.png" alt="Logo" id="dropdown__logo">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">AppleFix Reparaciones</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="gallery.html">Galería</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="products.html">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/contact.html">Contacto</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="cursos.html" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">Cursos</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Remanufacturación</a></li>
+                                    <li><a class="dropdown-item" href="#">Reparación</a></li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Software</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
 
     <main>
-        <div class="card" style="width: 20%;">
+        <div class="card">
             <img src="" class="card-img-top" alt="">
             <div class="card-body">
-                <h5 class="card-title">Curso de Remanufacturación</h5>
-                <p class="card-text">Aquí aprenderás a cambiar los vidrios dañados de los módulos que hayas cambiado anteriormente</p>
+                <h5 class="card-title">Pinza</h5>
+                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores cumque quod neque, voluptas, expedita rem maxime animi impedit unde distinctio accusantium officia corrupti, accusamus laboriosam earum repudiandae libero quidem assumenda.</p>
                 <a href="../pages/contact.html" class="btn btn-primary">Consulte por este producto</a>
             </div>
         </div>
         
-        <div class="card" style="width: 20%;">
+        <div class="card"">
             <img src="" class="card-img-top" alt="">
             <div class="card-body">
                 <h5 class="card-title">Curso de Remanufacturación</h5>
@@ -67,7 +81,7 @@
             </div>
         </div>
 
-        <div class="card" style="width: 20%;">
+        <div class="card">
             <img src="" class="card-img-top" alt="">
             <div class="card-body">
                 <h5 class="card-title">Curso de Remanufacturación</h5>
@@ -76,7 +90,7 @@
             </div>
         </div>
 
-        <div class="card" style="width: 20%;">
+        <div class="card">
             <img src="" class="card-img-top" alt="">
             <div class="card-body">
                 <h5 class="card-title">Curso de Remanufacturación</h5>
@@ -85,7 +99,7 @@
             </div>
         </div>
 
-        <div class="card" style="width: 20%;">
+        <div class="card">
             <img src="" class="card-img-top" alt="">
             <div class="card-body">
                 <h5 class="card-title">Curso de Remanufacturación</h5>
@@ -94,7 +108,7 @@
             </div>
         </div>
 
-        <div class="card" style="width: 20%;">
+        <div class="card">
             <img src="" class="card-img-top" alt="">
             <div class="card-body">
                 <h5 class="card-title">Curso de Remanufacturación</h5>
@@ -103,7 +117,7 @@
             </div>
         </div>
 
-        <div class="card" style="width: 20%;">
+        <div class="card">
             <img src="" class="card-img-top" alt="">
             <div class="card-body">
                 <h5 class="card-title">Curso de Remanufacturación</h5>
@@ -112,7 +126,7 @@
             </div>
         </div>
 
-        <div class="card" style="width: 20%;">
+        <div class="card">
             <img src="" class="card-img-top" alt="">
             <div class="card-body">
                 <h5 class="card-title">Curso de Remanufacturación</h5>
@@ -121,7 +135,7 @@
             </div>
         </div>
 
-        <div class="card" style="width: 20%;">
+        <div class="card"">
             <img src="" class="card-img-top" alt="">
             <div class="card-body">
                 <h5 class="card-title">Curso de Remanufacturación</h5>
@@ -130,7 +144,7 @@
             </div>
         </div>
 
-        <div class="card" style="width: 20%;">
+        <div class="card">
             <img src="" class="card-img-top" alt="">
             <div class="card-body">
                 <h5 class="card-title">Curso de Remanufacturación</h5>
@@ -139,7 +153,7 @@
             </div>
         </div>
 
-        <div class="card" style="width: 20%;">
+        <div class="card">
             <img src="" class="card-img-top" alt="">
             <div class="card-body">
                 <h5 class="card-title">Curso de Remanufacturación</h5>
@@ -148,7 +162,7 @@
             </div>
         </div>
 
-        <div class="card" style="width: 20%;">
+        <div class="card">
             <img src="" class="card-img-top" alt="">
             <div class="card-body">
                 <h5 class="card-title">Curso de Remanufacturación</h5>
@@ -170,5 +184,12 @@
             </ul>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+        crossorigin="anonymous"></script>
 </body>
 </html>

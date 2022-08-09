@@ -1,0 +1,27 @@
+@media (max-width: 576px) {
+    #picture__logo {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .grid {
+        grid-template-columns: 1fr !important;
+        grid-template-rows: 0px repeat(2, 1fr) 0px;
+        grid-template-areas:
+            " head"
+            " imgs"
+            " text "
+            " foot" !important;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px
+    }
+    #presentation {
+        height: auto !important;
+    }
+    .card {
+        flex-direction: column !important;
+        width: 100% !important;
+    }
+}
+
