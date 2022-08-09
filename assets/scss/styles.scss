@@ -129,9 +129,10 @@ main {
     width: auto;
     margin: 10px;
     transition: height 2s;
+    border-radius: 1rem;
 }
 
-.div__imgs{
+.div__imgs {
     &:hover {
         height: 230px;
     }
@@ -224,6 +225,11 @@ fieldset {
     justify-content: center;
 }
 
+.card {
+    border-radius: 1rem !important;
+    flex-wrap: nowrap;
+}
+
 .card--modifier{
     width: 20%;
 }
@@ -265,4 +271,7 @@ fieldset {
     opacity: 0.9;
     height: 20rem;
     margin-bottom: 5rem;
+}
+.carousel-inner {
+    border-radius: 1rem;
 }
