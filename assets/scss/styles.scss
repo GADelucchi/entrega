@@ -15,12 +15,13 @@ $cursos:(
     box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 html {
     font-size: 62.5%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(224, 224, 224);
 }
 
 main {
@@ -29,7 +30,6 @@ main {
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 30px;
-    
 }
 
 .main-modifier {
@@ -54,43 +54,6 @@ main {
     gap: 30px
 }
 
-.menu__item{
-    &:hover .submenu {
-        display: block;
-        z-index: 1;
-        background: $gradient__transparent;
-    }
-}
-
-.menu__link {
-    text-decoration: none;
-    font-size: 1.8em;
-    color: black;
-    padding: 0.7rem;
-}
-
-.submenu {
-    list-style: none;
-    display: none;
-    position: absolute;
-    // background-image: $gradient__transparent;
-}
-
-.submenu__item {
-    padding: 0.5rem;
-}
-
-// .submenu__link {
-//     text-decoration: none;
-//     font-size: 1.8em;
-//     color: black;
-// }
-
-.menu__link--modifier {
-    font-weight: bold;
-    text-decoration: underline;
-}
-
 .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -98,7 +61,7 @@ main {
     grid-template-areas: 
     " head head"
     " imgs text"
-    " imgs . "
+    " imgs text "
     " foot foot";
     grid-column-gap: 20px;
     grid-row-gap: 20px
@@ -121,7 +84,6 @@ main {
     align-content: center;
     align-items: center;
     grid-area: imgs;
-    background-image: radial-gradient(rgb(215, 255, 255), white)
 }
 
 .div__imgs {
@@ -143,11 +105,11 @@ main {
     flex-direction: column;
     align-items: center;
     grid-area: text;
-    background-image: radial-gradient(bisque, white);
+    margin-top: 4rem;
 }
 
 .titulo {
-    font-size: 2em;
+    font-size: 3.5rem;
     margin: 0.5rem;
 }
 
@@ -160,8 +122,8 @@ main {
 
 #presentation {
     margin: 1rem;
-    font-size: 1.4em;
-    height: 200px;
+    font-size: 2rem;
+    height: 400px;
     overflow: auto;
 }
 
@@ -169,11 +131,24 @@ main {
     font-weight: bold;
 }
 
-// .footer__link {
-//     text-decoration: none;
-//     font-size: 1.8em;
-//     color: black;
-// }
+.footer__link {
+    text-decoration: none;
+    font-size: 1.5em;
+    &:hover {
+        color: black;
+    }
+}
+
+.contact {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.8em;
+    color: #4297df;
+    margin-top: 5rem;
+    &:hover {
+        color: black;
+    }
+}
 
 .terminos__listado{
     font-size: 20px;
@@ -226,8 +201,11 @@ fieldset {
 }
 
 .card {
-    border-radius: 1rem !important;
+    border-radius: 1rem;
     height: 400px;
+    --bs-card-cap-bg: rgba;
+    --bs-card-border-width: 2px;
+    border-color: rgb(37, 37, 37);
 }
 
 .card--modifier{
@@ -242,9 +220,18 @@ fieldset {
     font-size: 1.5em;
 }
 
+.card-img-top {
+    height: 30rem;
+    width: auto;
+}
+
+.btn {
+    font-size: 1.4rem;
+}
+
 @each $curso, $color in $cursos {
     .card-#{$curso}{
-        background-color: $color !important;
+        background-color: $color;
     }
 }
 
@@ -267,11 +254,20 @@ fieldset {
     justify-content: center;
     align-items: center;
     background-size: 100%;
-    background-image: url("../imgs/foto_contacto.jpeg");
+    background-image: url("../imgs/foto_contacto.png");
     opacity: 0.9;
     height: 20rem;
     margin-bottom: 5rem;
 }
 .carousel-inner {
     border-radius: 1rem;
+}
+
+.dropdown-menu {
+    background-color: rgb(224, 224, 224);
+    transform: translate(-25px, 0px);
+}
+
+.dropdown-item {
+    font-size: 1.4rem;
 }
