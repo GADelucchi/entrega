@@ -3,16 +3,29 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background: linear-gradient(to bottom, #4297df, white);
+  background: linear-gradient(to bottom, #4297df, #e0e0e0);
   grid-area: head;
-  margin-bottom: 5rem; }
+  margin-bottom: 7rem; }
+
+.offcanvas {
+  padding-right: 1.2rem; }
+
+.nav-link {
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: black;
+  padding: 0.7rem; }
+
+.active {
+  font-weight: bold;
+  text-decoration: underline; }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background: linear-gradient(to bottom, #4297df, white);
+  background: linear-gradient(to bottom, #4297df, #e0e0e0);
   grid-area: head;
   margin-bottom: 5rem; }
 
@@ -21,7 +34,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background: linear-gradient(to bottom, #4297df, white);
+  background: linear-gradient(to bottom, #4297df, #e0e0e0);
   grid-area: head; }
 
 .fixed-top {
@@ -33,7 +46,7 @@ footer {
   align-items: center;
   height: 8rem;
   grid-area: foot;
-  background-image: linear-gradient(to top, #4297df, white);
+  background-image: linear-gradient(to top, #4297df, #e0e0e0);
   margin-top: 5rem; }
 
 @media (max-width: 576px) {
@@ -53,16 +66,21 @@ footer {
     flex-direction: column !important;
     width: 100% !important; } }
 
+@media (min-width: 576px) {
+  body {
+    background-color: #e0e0e0; } }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
-body {
-  font-family: Arial, Helvetica, sans-serif; }
-
 html {
   font-size: 62.5%; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #e0e0e0; }
 
 main {
   display: flex;
@@ -89,34 +107,11 @@ main {
   list-style: none;
   gap: 30px; }
 
-.menu__item:hover .submenu {
-  display: block;
-  z-index: 1;
-  background: linear-gradient(to bottom, transparent, #FFFFFF); }
-
-.menu__link {
-  text-decoration: none;
-  font-size: 1.8em;
-  color: black;
-  padding: 0.7rem; }
-
-.submenu {
-  list-style: none;
-  display: none;
-  position: absolute; }
-
-.submenu__item {
-  padding: 0.5rem; }
-
-.menu__link--modifier {
-  font-weight: bold;
-  text-decoration: underline; }
-
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 0px repeat(2, 1fr) 0px;
-  grid-template-areas: " head head" " imgs text" " imgs . " " foot foot";
+  grid-template-areas: " head head" " imgs text" " imgs text " " foot foot";
   grid-column-gap: 20px;
   grid-row-gap: 20px; }
 
@@ -129,8 +124,7 @@ main {
   justify-content: space-around;
   align-content: center;
   align-items: center;
-  grid-area: imgs;
-  background-image: radial-gradient(#d7ffff, white); }
+  grid-area: imgs; }
 
 .div__imgs {
   height: 200px;
@@ -147,10 +141,10 @@ main {
   flex-direction: column;
   align-items: center;
   grid-area: text;
-  background-image: radial-gradient(bisque, white); }
+  margin-top: 4rem; }
 
 .titulo {
-  font-size: 2em;
+  font-size: 3.5rem;
   margin: 0.5rem; }
 
 .titulo--modifier {
@@ -161,12 +155,27 @@ main {
 
 #presentation {
   margin: 1rem;
-  font-size: 1.4em;
-  height: 200px;
+  font-size: 2rem;
+  height: 400px;
   overflow: auto; }
 
 #presentation-modifier {
   font-weight: bold; }
+
+.footer__link {
+  text-decoration: none;
+  font-size: 1.5em; }
+  .footer__link:hover {
+    color: black; }
+
+.contact {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.8em;
+  color: #4297df;
+  margin-top: 5rem; }
+  .contact:hover {
+    color: black; }
 
 .terminos__listado {
   font-size: 20px;
@@ -203,8 +212,11 @@ fieldset {
   justify-content: center; }
 
 .card {
-  border-radius: 1rem !important;
-  height: 400px; }
+  border-radius: 1rem;
+  height: 400px;
+  --bs-card-cap-bg: rgba;
+  --bs-card-border-width: 2px;
+  border-color: #252525; }
 
 .card--modifier {
   width: 20%; }
@@ -215,17 +227,24 @@ fieldset {
 .card-text {
   font-size: 1.5em; }
 
+.card-img-top {
+  height: 30rem;
+  width: auto; }
+
+.btn {
+  font-size: 1.4rem; }
+
 .card-remanufacturacion {
-  background-color: #FFE4C4 !important; }
+  background-color: #FFE4C4; }
 
 .card-reparacion {
-  background-color: #4297df !important; }
+  background-color: #4297df; }
 
 .card-software {
-  background-color: #F2C4FF !important; }
+  background-color: #F2C4FF; }
 
 .card-placa {
-  background-color: #DCFFC4 !important; }
+  background-color: #DCFFC4; }
 
 .footer__link {
   text-decoration: none;
@@ -249,3 +268,10 @@ fieldset {
 
 .carousel-inner {
   border-radius: 1rem; }
+
+.dropdown-menu {
+  background-color: #e0e0e0;
+  transform: translate(-25px, 0px); }
+
+.dropdown-item {
+  font-size: 1.4rem; }
