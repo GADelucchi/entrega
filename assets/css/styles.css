@@ -79,8 +79,8 @@ footer {
   .imgs {
     align-content: space-around !important; }
   .width {
-    width: 50rem !important;
-    height: 30rem !important; } }
+    width: 40rem !important;
+    height: auto !important; } }
 
 @media (min-width: 576px) {
   body {
