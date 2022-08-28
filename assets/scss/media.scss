@@ -1,10 +1,4 @@
 @media (max-width: 576px) {
-    #picture__logo {
-        display: none;
-    }
-}
-
-@media (max-width: 576px) {
     .grid {
         grid-template-columns: 1fr !important;
         grid-template-rows: 0px repeat(2, 1fr) 0px;
@@ -17,11 +11,29 @@
         grid-row-gap: 20px
     }
     #presentation {
-        height: auto !important;
+        height: auto;
+        width: 500px;
     }
     .card {
-        flex-direction: column !important;
-        width: 100% !important;
+        flex-direction: column;
+        width: 90% !important;
+    }
+    #picture__logo {
+        display: none;
+    }
+    .div__imgs {
+        width: auto;
+        height: 300px !important;
+        &:hover {
+            height: 330px !important;
+        }
+    }
+    .imgs {
+        align-content: space-around !important;
+    }
+    .width {
+        width: 50rem !important;
+        height: 30rem !important;
     }
 }
 

@@ -1,9 +1,18 @@
 footer {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 8rem;
     grid-area: foot;
     background-image: linear-gradient(to top, #4297df, rgb(224, 224, 224));
     margin-top: 5rem;
+}
+
+.footer__link {
+    text-decoration: none;
+    font-size: 1.5em;
+    &:hover {
+        color: black;
+    }
 }

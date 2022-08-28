@@ -42,6 +42,7 @@ header {
 
 footer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 8rem;
@@ -49,9 +50,11 @@ footer {
   background-image: linear-gradient(to top, #4297df, #e0e0e0);
   margin-top: 5rem; }
 
-@media (max-width: 576px) {
-  #picture__logo {
-    display: none; } }
+.footer__link {
+  text-decoration: none;
+  font-size: 1.5em; }
+  .footer__link:hover {
+    color: black; }
 
 @media (max-width: 576px) {
   .grid {
@@ -61,10 +64,23 @@ footer {
     grid-column-gap: 20px;
     grid-row-gap: 20px; }
   #presentation {
-    height: auto !important; }
+    height: auto;
+    width: 500px; }
   .card {
-    flex-direction: column !important;
-    width: 100% !important; } }
+    flex-direction: column;
+    width: 90% !important; }
+  #picture__logo {
+    display: none; }
+  .div__imgs {
+    width: auto;
+    height: 300px !important; }
+    .div__imgs:hover {
+      height: 330px !important; }
+  .imgs {
+    align-content: space-around !important; }
+  .width {
+    width: 50rem !important;
+    height: 30rem !important; } }
 
 @media (min-width: 576px) {
   body {
@@ -104,8 +120,9 @@ main {
 
 .menu {
   display: flex;
-  list-style: none;
-  gap: 30px; }
+  flex-direction: column;
+  align-items: center;
+  list-style: none; }
 
 .grid {
   display: grid;
@@ -161,12 +178,6 @@ main {
 
 #presentation-modifier {
   font-weight: bold; }
-
-.footer__link {
-  text-decoration: none;
-  font-size: 1.5em; }
-  .footer__link:hover {
-    color: black; }
 
 .contact {
   text-decoration: none;
