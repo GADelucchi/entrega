@@ -91,13 +91,14 @@ main {
     height: 200px;
     width: auto;
     margin: 10px;
-    transition: height 2s;
+    transition: width 2s;
     border-radius: 1rem;
 }
 
 .div__imgs {
     &:hover {
         height: 230px;
+        width: auto;
     }
 }
 

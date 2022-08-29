@@ -22,10 +22,11 @@
         display: none;
     }
     .div__imgs {
-        width: auto;
-        height: 300px !important;
+        width: 80% !important;
+        height: auto !important;
         &:hover {
-            height: 330px !important;
+            width: 95% !important;
+            height: auto !important;
         }
     }
     .imgs {
@@ -34,6 +35,12 @@
     .width {
         width: 40rem !important;
         height: auto !important;
+    }
+    #presentation {
+    width: 90%;
+    }
+    .dropdown-menu {
+        transform: translate(10px, 0px) !important;
     }
 }
 

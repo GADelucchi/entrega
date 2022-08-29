@@ -72,15 +72,20 @@ footer {
   #picture__logo {
     display: none; }
   .div__imgs {
-    width: auto;
-    height: 300px !important; }
+    width: 80% !important;
+    height: auto !important; }
     .div__imgs:hover {
-      height: 330px !important; }
+      width: 95% !important;
+      height: auto !important; }
   .imgs {
     align-content: space-around !important; }
   .width {
     width: 40rem !important;
-    height: auto !important; } }
+    height: auto !important; }
+  #presentation {
+    width: 90%; }
+  .dropdown-menu {
+    transform: translate(10px, 0px) !important; } }
 
 @media (min-width: 576px) {
   body {
@@ -147,11 +152,12 @@ main {
   height: 200px;
   width: auto;
   margin: 10px;
-  transition: height 2s;
+  transition: width 2s;
   border-radius: 1rem; }
 
 .div__imgs:hover {
-  height: 230px; }
+  height: 230px;
+  width: auto; }
 
 .texto {
   display: flex;
