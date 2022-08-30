@@ -1,12 +1,12 @@
 @media (max-width: 576px) {
     .grid {
-        grid-template-columns: 1fr !important;
+        grid-template-columns: 1fr;
         grid-template-rows: 0px repeat(2, 1fr) 0px;
         grid-template-areas:
             " head"
             " imgs"
             " text "
-            " foot" !important;
+            " foot";
         grid-column-gap: 20px;
         grid-row-gap: 20px
     }
@@ -16,31 +16,31 @@
     }
     .card {
         flex-direction: column;
-        width: 90% !important;
+        width: 90%;
     }
     #picture__logo {
         display: none;
     }
     .div__imgs {
-        width: 80% !important;
-        height: auto !important;
+        width: 80%;
+        height: auto;
         &:hover {
-            width: 95% !important;
-            height: auto !important;
+            width: 95%;
+            height: auto;
         }
     }
     .imgs {
-        align-content: space-around !important;
+        align-content: space-around;
     }
     .width {
-        width: 40rem !important;
-        height: auto !important;
+        width: 40rem;
+        height: auto;
     }
     #presentation {
     width: 90%;
     }
     .dropdown-menu {
-        transform: translate(10px, 0px) !important;
+        transform: translate(10px, 0px);
     }
 }
 

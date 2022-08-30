@@ -1,6 +1,6 @@
 @import "header.scss";
 @import "footer.scss";
-@import "media.scss";
+
 $gradient__transparent: linear-gradient(to bottom, transparent, #FFFFFF);
 $cursos:(
     remanufacturacion: #FFE4C4,
@@ -265,3 +265,5 @@ fieldset {
 .dropdown-item {
     font-size: 1.4rem;
 }
+
+@import "media.scss";

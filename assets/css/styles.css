@@ -56,41 +56,6 @@ footer {
   .footer__link:hover {
     color: black; }
 
-@media (max-width: 576px) {
-  .grid {
-    grid-template-columns: 1fr !important;
-    grid-template-rows: 0px repeat(2, 1fr) 0px;
-    grid-template-areas: " head" " imgs" " text " " foot" !important;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px; }
-  #presentation {
-    height: auto;
-    width: 500px; }
-  .card {
-    flex-direction: column;
-    width: 90% !important; }
-  #picture__logo {
-    display: none; }
-  .div__imgs {
-    width: 80% !important;
-    height: auto !important; }
-    .div__imgs:hover {
-      width: 95% !important;
-      height: auto !important; }
-  .imgs {
-    align-content: space-around !important; }
-  .width {
-    width: 40rem !important;
-    height: auto !important; }
-  #presentation {
-    width: 90%; }
-  .dropdown-menu {
-    transform: translate(10px, 0px) !important; } }
-
-@media (min-width: 576px) {
-  body {
-    background-color: #e0e0e0; } }
-
 * {
   margin: 0;
   padding: 0;
@@ -292,3 +257,38 @@ fieldset {
 
 .dropdown-item {
   font-size: 1.4rem; }
+
+@media (max-width: 576px) {
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0px repeat(2, 1fr) 0px;
+    grid-template-areas: " head" " imgs" " text " " foot";
+    grid-column-gap: 20px;
+    grid-row-gap: 20px; }
+  #presentation {
+    height: auto;
+    width: 500px; }
+  .card {
+    flex-direction: column;
+    width: 90%; }
+  #picture__logo {
+    display: none; }
+  .div__imgs {
+    width: 80%;
+    height: auto; }
+    .div__imgs:hover {
+      width: 95%;
+      height: auto; }
+  .imgs {
+    align-content: space-around; }
+  .width {
+    width: 40rem;
+    height: auto; }
+  #presentation {
+    width: 90%; }
+  .dropdown-menu {
+    transform: translate(10px, 0px); } }
+
+@media (min-width: 576px) {
+  body {
+    background-color: #e0e0e0; } }
