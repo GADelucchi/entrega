@@ -1,6 +1,3 @@
-@import "header.scss";
-@import "footer.scss";
-
 $gradient__transparent: linear-gradient(to bottom, transparent, #FFFFFF);
 $cursos:(
     remanufacturacion: #FFE4C4,
@@ -95,6 +92,13 @@ main {
     border-radius: 1rem;
 }
 
+.div__imgs--modifier {
+    height: 30rem;
+    width: auto;
+    margin: 10px;
+    border-radius: 1rem;
+}
+
 .div__imgs {
     &:hover {
         height: 230px;
@@ -108,6 +112,12 @@ main {
     align-items: center;
     grid-area: text;
     margin-top: 4rem;
+}
+
+.texto--modifier {
+    font-size: 1.8rem;
+    margin: 1rem;
+    width: 70%;
 }
 
 .titulo {
@@ -266,4 +276,6 @@ fieldset {
     font-size: 1.4rem;
 }
 
+@import "header.scss";
+@import "footer.scss";
 @import "media.scss";
