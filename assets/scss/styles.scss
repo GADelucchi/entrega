@@ -55,12 +55,9 @@ main {
 .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 0px repeat(2, 1fr) 0px;
+    grid-template-rows: 1fr;
     grid-template-areas: 
-    " head head"
-    " imgs text"
-    " imgs text "
-    " foot foot";
+    " imgs text";
     grid-column-gap: 20px;
     grid-row-gap: 20px
 }

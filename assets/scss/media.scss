@@ -1,12 +1,10 @@
 @media (max-width: 576px) {
     .grid {
         grid-template-columns: 1fr;
-        grid-template-rows: 0px repeat(2, 1fr) 0px;
+        grid-template-rows: repeat(2, 700px);
         grid-template-areas:
-            " head"
             " imgs"
-            " text "
-            " foot";
+            " text";
         grid-column-gap: 20px;
         grid-row-gap: 20px
     }
@@ -17,6 +15,9 @@
     .card {
         flex-direction: column;
         width: 90%;
+    }
+    #card--margin-top {
+        margin-top: 5rem;
     }
     #picture__logo {
         display: none;
@@ -30,7 +31,7 @@
         }
     }
     .imgs {
-        align-content: space-around;
+        align-content: space-evenly;
     }
     .width {
         width: 40rem;
@@ -48,6 +49,9 @@
     }
     .titulo-modifier {
         margin-left: 3rem;
+    }
+    .form {
+        margin-left: 3.5rem
     }
 }
 

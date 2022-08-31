@@ -39,8 +39,8 @@ main {
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 0px repeat(2, 1fr) 0px;
-  grid-template-areas: " head head" " imgs text" " imgs text " " foot foot";
+  grid-template-rows: 1fr;
+  grid-template-areas: " imgs text";
   grid-column-gap: 20px;
   grid-row-gap: 20px; }
 
@@ -272,8 +272,8 @@ footer {
 @media (max-width: 576px) {
   .grid {
     grid-template-columns: 1fr;
-    grid-template-rows: 0px repeat(2, 1fr) 0px;
-    grid-template-areas: " head" " imgs" " text " " foot";
+    grid-template-rows: repeat(2, 700px);
+    grid-template-areas: " imgs" " text";
     grid-column-gap: 20px;
     grid-row-gap: 20px; }
   #presentation {
@@ -282,6 +282,8 @@ footer {
   .card {
     flex-direction: column;
     width: 90%; }
+  #card--margin-top {
+    margin-top: 5rem; }
   #picture__logo {
     display: none; }
   .div__imgs {
@@ -291,7 +293,7 @@ footer {
       width: 95%;
       height: auto; }
   .imgs {
-    align-content: space-around; }
+    align-content: space-evenly; }
   .width {
     width: 40rem;
     height: auto; }
@@ -303,7 +305,9 @@ footer {
     width: 80%;
     height: auto; }
   .titulo-modifier {
-    margin-left: 3rem; } }
+    margin-left: 3rem; }
+  .form {
+    margin-left: 3.5rem; } }
 
 @media (min-width: 576px) {
   body {
